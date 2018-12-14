@@ -1,0 +1,170 @@
+body {
+    font-family: "Poppins", sans-serif;
+    background: #000000;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to top, #434343, #000000);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to top, #434343, #000000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    max-width: 100%;
+}
+
+html {
+    /*position: relative;*/
+     min-height: 100%;
+     max-width: 100%;
+}
+
+::selection {
+    background-color: #1abc9c;
+    color: #ffffff;
+}
+
+::-moz-selection {
+    background-color: #1abc9c;
+    color: #ffffff;
+}
+
+a {
+    text-decoration: none ;
+    
+}
+
+a:hover,
+a:focus,
+a:active {
+    text-decoration: none;
+    outline: none;
+    color: #333333;
+}
+
+b {
+    font-weight: 600;
+    color: #333333;
+}
+
+p {
+    font-size: 14px;
+    font-family: "Poppins", sans-serif;
+}
+
+.social-icon {
+    text-align: center;
+}
+
+.social-icon:before,
+.social-icon:after {
+  content: " ";
+  display: table;
+}
+
+.social-icon:after {
+  clear: both;
+}
+
+.social-icon li {
+    display: inline-block;
+    margin: 2px 4px;
+    align-content: center;
+  }
+.social-icon li a {
+    font-size: 40px;
+    color:black;
+    text-align: center;
+    align-content: center;
+    
+  }
+  .social-icon li a:hover{
+      color:yellowgreen;
+  }
+  
+  @media screen and (max-width: 600px) {
+    .social-icon li a {
+        font-size: 30px;
+        color:black;
+        text-align: center;
+        align-content: center;
+        
+      }
+
+  }
+     li.nav-item a:hover{
+    text-decoration: none;
+    outline: none;
+    color: #333333;
+  }
+ 
+  
+  @media screen and (min-width: 601px) {
+    div.example {
+      font-size: 24px
+    }
+  }
+  
+  /* If the screen size is 600px wide or less, set the font-size of <div> to 30px */
+  @media screen and (max-width: 600px) {
+    div.example {
+      font-size:1px;
+    }
+  }
+  hr {
+    
+    display:block;
+    width: 96%;               
+    background-color:#FFFF00;
+    height: 1px;
+  }
+  div.hov p.h6 a:hover{
+      text-decoration: none;
+      outline: none;
+      color: #FFFF00;
+      
+  }
+ 
+
+  
+  #navvi li a{
+    text-decoration: none;
+    outline: none;
+    font-weight: 600;
+    color:  black;
+    clear:both;
+    
+  }
+  #navvi li a:focus,a:active{
+    text-decoration: none;
+    outline: none;
+    
+  }
+  #navvi li a:hover{
+    
+    font-weight: 600;
+    color:yellowgreen;
+    
+    
+  }
+  #fontss p {
+      font-weight: 700;
+      color: #FFFF00;
+  }
+  .carousel-control-prev-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23333' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E");
+}
+
+.carousel-control-next-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23333' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E");
+}
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+.lb-next {
+  background: url("../images/next.png") no-repeat scroll right 48% transparent;
+}
+.lb-prev {
+  background: url("../images/prev.png") no-repeat scroll left 48% transparent;
+}
+.email p a{
+ text-decoration: none;
+ color: #000000;
+ font-weight:300;
+ 
+}
+

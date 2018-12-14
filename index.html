@@ -1,121 +1,273 @@
 <!DOCTYPE html>
-<html>
-<title>Resume</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto'>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<style>
-html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
-</style>
-<body class="w3-light-grey">
-
-<!-- Page Container -->
-<div class="w3-content w3-margin-top" style="max-width:1400px;">
-
-  <!-- The Grid -->
-  <div class="w3-row-padding">
-  
-    <!-- Left Column -->
-    <div class="w3-third">
-    
-      <div class="w3-white w3-text-grey w3-card-4">
-        <div class="w3-display-container">
-          <img src="/image/profile.jpg" style="width:100%" alt="Avatar">
-          <div class="w3-display-bottomleft w3-container ">
-            <h2 style="color:darkturquoise"><b>Winston Dsouza</b></h2>
-          </div>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"  crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Winston Dsouza</title>
+</head>
+<body>
+    <div class="d-flex flex-column justify-content-between" >
+        <!--profile card starts-->
+        <div class="m-2 mt-5 p-1 mx-auto " style="background-color: #ffffff;border-radius: 1rem;  min-width: 100px ; " id="div_sz" >
+            <!-- profile image-->
+            <div id="profile image">
+                <img src="images/my_pic.jpg" alt="" class="img-fluid rounded-circle shadow my-auto mx-auto d-block " style="height: 320px;">
+            </div>
+            <!-- pofile content-->
+            <div id="profile-content">
+               <!--typing intro-->
+                    <div class="h5 pt-1">
+                        <div style="text-align: center" class="m-2">
+                            <div id="typed-strings" >
+                                <p>Hi i am <strong>Winston Dsouza.</strong>^2000</p>
+                                <p>Hi i am <strong>Software Developer</strong>^2000</p>
+                                </div>
+                            <span id="typed"></span>
+                        </div>
+                    </div>
+                        
+                    
+                <!-- typing intro ends-->     
+                <!-- Social media icons--> 
+                    <div class="social">
+                            <ul class="social-icon">
+                                     <li><a href="https://www.linkedin.com/in/winston-dsouza/" target="_blank" class="linkedin"><i class="fab fa-linkedin"></i></a></li></li>
+                                     <li><a href="https://github.com/winston-dsouza" target="_blank" class="github"><i class="fab fa-github"></i></a></li></li>
+                                     <li><a href="https://www.facebook.com/winston.dsouza.in" target="_blank" class="facebook"><i class="fab fa-facebook"></i></a></li></li>
+                                     <li><a href="https://www.instagram.com/dsowinston/" target="_blank" class="instagram"><i class="fab fa-instagram"></i></a></li></li>
+                            </ul>
+                            
+                    </div>
+                <!--Social media icon ends-->
+                
+            </div>     
         </div>
-        <div class="w3-container">
-    
-          <p><i class="fa fa-home fa-fw w3-margin-right w3-large w3-text-teal"></i>Mangalore</p>
-          <p><i class="fa fa-envelope fa-fw w3-margin-right w3-large w3-text-teal"></i>winstondsouza688@gmail.com</p>
-          <p><i class="fa fa-phone fa-fw w3-margin-right w3-large w3-text-teal"></i>+918971147568</p>
-          <hr>
+        <!--profile card ends-->
 
-          <p class="w3-large"><b><i class="fa fa-asterisk fa-fw w3-margin-right w3-text-teal"></i>Skills</b></p>
-         <ul>
-             <li>C Programming</li>
-             <li> HTML, CSS, Bootstrap, MySQL, PHP</li>
-             <li>Android</li>
-             <li>Java</li>
-             <li>Kotlin</li>
-             <li>JavaScript,Angular JS</li>
-
-         </ul>
-          <br>
+        <!-- navigation bar starts-->
+        <div class=" m-5  p-2  mx-auto" style="background-color: #ffffff;border-radius: 0rem; max-width: 500px;" >
+                <ul class="nav justify-content-center  " id="navvi">
+                        <li class="nav-item" >
+                          <a class="nav-link " href="#education"><i class="fas fa-graduation-cap"></i>Education</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="#trainings"><i class="fas fa-chalkboard"></i>Trainings</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="#projects"><i class="fas fa-project-diagram"></i>Projects</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="#contact"><i class="fas fa-user-alt"></i>Contact</a>
+                        </li>
+                      </ul>
+        </div> 
+        <!--navigation bar ends-->
+        <!--education card starts-->
+        <div class="mx-3 my-3 p-2 card-deck" style="background-color:rgba(0,0,0,0);border-radius: 0rem ;" id="education">
+            <div class="mx-3 my-3  p-2 pb-5 card mx-auto" style="background-color: #ffffff;border-radius: 0rem ; max-width: 1000px; " >
+               <p class="text-center font-weight-light h2"><i class="fas fa-graduation-cap"></i>Education</h1>
+               
+               <hr/>
+                 <div class="card-deck justify-content-center">
+                    <div class="card text-white bg-dark shadow-lg mb-3 "style="border-radius:2rem;max-width:25rem" >
+                            <div class="card-body ">
+                              <h5 class="card-title"><p class="font-weight-light  h6"><i class="far fa-calendar-alt"></i> 2016-2020</p></h5>
+                              <hr>
+                              <h5 class="card-title">Bachelor of Engineering(B.E), <br/>Computer Science</h5>
+                              <hr>
+                              <p class="card-text h6">St.Joseph Engineering College</p>
+                            </div>
+                    </div>
+                    <div class="card text-white bg-dark shadow-lg mb-3 "style="border-radius:2rem;max-width:25rem" >
+                            <div class="card-body ">
+                              <h5 class="card-title"><p class="font-weight-light  h6"><i class="far fa-calendar-alt"></i> 2014-2016</p></h5>
+                              <hr>
+                              <h5 class="card-title">XII(Senior Secondary),<br/> Science</h5>
+                              <hr>
+                              <p class="card-text h6">State Board(Vijaya College Mulki)</p>
+                            </div>
+                    </div>
+                    <div class="card text-white bg-dark shadow-lg mb-3 "style="border-radius:2rem;max-width:25rem" >
+                            <div class="card-body ">
+                              <h5 class="card-title"><p class="font-weight-light  h6"><i class="far fa-calendar-alt"></i> 2014</p></h5>
+                              <hr>
+                              <h5 class="card-title">X(Secondary)<br/>  </h5>
+                              <hr>
+                              <p class="card-text h6">State Board<br/>(Shree Narayana Guru School)</p>
+                            </div>
+                    </div>     
+                </div>
         </div>
-      </div><br>
-
-    <!-- End Left Column -->
     </div>
-
-    <!-- Right Column -->
-    <div class="w3-twothird">
-    
-    
-
-      <div class="w3-container w3-card w3-white">
-        <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-certificate fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Education</h2>
-        <div class="w3-container">
-          <h5 class="w3-opacity"><b>Bachelor of Engineering(B.E), Computer Science</b></h5>
-          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2016-2020</h6>
-          <p>St.Joseph Engineering College</p>
-          <hr>
-        </div>
-        <div class="w3-container">
-          <h5 class="w3-opacity"><b>XII(Senior Secondary), Science</b></h5>
-          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2014 - 2016</h6>
-          <p> STATE BOARD(VIJAYA COLLEGE MULKI)</p>
-          <p>Percentage: 80.00%</p>
-          <hr>
-        </div>
-        <div class="w3-container">
-          <h5 class="w3-opacity"><b>X(Secondary)</b></h5>
-          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2014</h6>
-          <p>STATE BOARD(SHREE NARAYANA GURU SCHOOL)</p>
-          <p>Percentage: 89.34%</p><br>
-        </div>
-      </div>
-      <div class="w3-container w3-card w3-white">
-        <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-certificate fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Trainings</h2>
-        <div class="w3-container">
-          <h5 class="w3-opacity"><b>Web Development</b></h5>
-          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Aug 2017 -Sep 2017</h6>
-          <p>Internshala Trainings(online)</p>
-          <hr>
-        </div>
-        <div class="w3-container">
-          <h5 class="w3-opacity"><b>Android Application Development</b></h5>
-          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Jan 2018-Feb 2018</h6>
-          <p>Internshala Trainings(online)</p>
-          <hr>
+    <!-- education card ends-->
+    <!-- Trainings card start-->
+    <div class="mx-3 my-3 p-2 card-deck" style="background-color:rgba(0,0,0,0);border-radius: 0rem ;" id="trainings">
+            <div class="mx-3 my-3  p-2 pb-5 card mx-auto" style="background-color: #ffffff;border-radius: 0rem ; max-width: 1000px; " >
+               <p class="text-center font-weight-light h2"><i class="fas fa-chalkboard"></i>Trainings</h1>
+               
+               <hr/>
+                 <div class="card-deck justify-content-center">
+                    <div class="card text-white bg-dark shadow-lg mb-3 "style="border-radius:2rem;max-width:25rem" >
+                            <div class="card-body ">
+                              <h5 class="card-title"><p class="font-weight-light  h6"><i class="far fa-calendar-alt"></i> Jan 2018- Feb 2018</p></h5>
+                              <hr>
+                              <h5 class="card-title">Android Application Development</h5>
+                              <hr>
+                              <p class="card-text h6">Internshala Trainings (online)</p>
+                              <div class="tz-gallery hov">
+                                    <p class=" h6"  ><a href="images/android.jpg" class="lightbox">View Certification <i class="fas fa-eye"></i></a></p>
+                                 </div>
+                            </div>
+                    </div>
+                    <div class="card text-white bg-dark shadow-lg mb-3 "style="border-radius:2rem;max-width:25rem" >
+                            <div class="card-body ">
+                              <h5 class="card-title"><p class="font-weight-light  h6"><i class="far fa-calendar-alt"></i> Aug 2017 -Sep 2017</p></h5>
+                              <hr>
+                              <h5 class="card-title">Web Development</h5>
+                              <hr>
+                              <p class="card-text h6">Internshala Trainings (online) </p>
+                              <div class=" tz-gallery hov">
+                                 <p class=" h6"  ><a href="images/web.jpg" class="lightbox" style="display:inline-block ; ">View Certification <i class="fas fa-eye"></i></a></p>
+                              </div>
+                            </div>
+                    </div>     
+                </div>
         </div>
         
-      </div>
-
-    <!-- End Right Column -->
     </div>
-    
-  <!-- End Grid -->
-  </div>
+    <!-- trainings card ends-->
+    <div class="mx-3 my-3 p-2 card-deck" style="background-color:rgba(0,0,0,0);border-radius: 0rem ;" id="projects">
+        <div class="mx-3 my-3  p-2 pb-5 card mx-auto" style="background-color: #ffffff;border-radius: 0rem ; max-width: 1000px; " >
+           <p class="text-center font-weight-light h2"><i class="fas fa-project-diagram"></i>Projects</h1>
+           
+           <hr/>
+                
+           <div class="card-deck">
+            <div class="card border-secondary">
+              
+              <div class="card-body">
+                <h5 class="card-title">My Personal Website</h5>
+                <p class="card-text">Developed a personal website using HTML5,CSS3,Bootstrap 4 and Javascript</p>
+              </div>
+              <div class="card-footer">
+                <small class="text-muted"><a href="https://github.com/winston-dsouza/winston-dsouza.github.io" target="_blank"> View on Github <i class="fab fa-github"></i></a></small>
+              </div>
+            </div>
+            <div class="card border-secondary">
+              <img class="card-img-top img-fluid " src="images/cart.png" alt="Card image cap" height="600px">
+              <div class="card-body">
+                <h5 class="card-title">Food Ordering Application</h5>
+                <p class="card-text font-weight-italic">Developed a food ordering app and Order Retrieval System which runs on desktop using Java,JavaFX connected to MySQL Database as a part of DBMS mini project</p>
+                <a href="images/first_page.png" data-toggle="lightbox" data-gallery="example-gallery">
+                  view screen shots <i class="fas fa-eye"></i>
+                </a>
+                <a href="images/SignUp.png" data-toggle="lightbox" data-gallery="example-gallery">
+                </a>
+                <a href="images/Login.png" data-toggle="lightbox" data-gallery="example-gallery"\>
+                </a>
+                <a href="images/confimation_dialog.png" data-toggle="lightbox" data-gallery="example-gallery" >
+                </a>
+                <a href="images/cart.png" data-toggle="lightbox" data-gallery="example-gallery" >
+                </a>
+                <a href="images/cart2.png" data-toggle="lightbox" data-gallery="example-gallery" >
+                </a>
+                <a href="images/setting.png" data-toggle="lightbox" data-gallery="example-gallery">
+                </a>
+                <a href="images/pay.png" data-toggle="lightbox" data-gallery="example-gallery">
+                </a>
+                <a href="images/thank.png" data-toggle="lightbox" data-gallery="example-gallery" >
+                </a>
+                <a href="images/res.png" data-toggle="lightbox" data-gallery="example-gallery">
+                </a>
+                <a href="images/login_admin.png" data-toggle="lightbox" data-gallery="example-gallery">
+                </a>
+                <a href="images/admin.png" data-toggle="lightbox" data-gallery="example-gallery" >
+                </a>
+                <a href="images/employee_add.png" data-toggle="lightbox" data-gallery="example-gallery" >
+                </a>
+                <a href="images/login_employee.png" data-toggle="lightbox" data-gallery="example-gallery">
+                </a>
+                <a href="images/orders.png" data-toggle="lightbox" data-gallery="example-gallery" >
+                </a>
+                <a href="images/order_deliver.png" data-toggle="lightbox" data-gallery="example-gallery">
+                </a>
+                    
+                 
+
+              </div>
+              <div class="card-footer">
+                <small class="text-muted"><a href="https://github.com/winston-dsouza/winston-dsouza.github.io" target="_blank"> View on Github <i class="fab fa-github"></i></a></small>
+              </div>
+            </div>
+
+            <div class="card">
+              
+              <div class="card-body">
+                <h5 class="card-title"></h5>
+                <p class="card-text">Project Content Soon updated ...........................................</p>
+              </div>
+              <div class="card-footer">
+                <small class="text-muted">.....</small>
+              </div>
   
-  <!-- End Page Container -->
+              
+            
+            </div>
+          </div>
+            </div>
+            
+    </div>
+    <div class="mx-3 my-3 p-2 card-deck" style="background-color:rgba(0,0,0,0);border-radius: 0rem ;" id="contact">
+        <div class="mx-3 my-3  p-2 pb-5 card mx-auto" style="background-color: #ffffff;border-radius: 0rem ; max-width: 1000px; min-width: 320px;" >
+           <p class="text-center font-weight-light h2"><i class="fas fa-user-alt"></i> Contact Me</h1>
+           
+           <hr/>
+             <div class=" text-center w-80 " >
+                        <div class="email" >
+                            <p style="text-decoration: none"> <i class="far fa-envelope-open" style="font-size:40px; color:orangered"></i><br/><a href="mailto:winstondsouza688@gmail.com"><u></u>winstondsouza688@gmail.com</a></p>
+                        </div>
+            </div>
+    </div>
 </div>
-
-<footer class="w3-container w3-teal w3-center w3-margin-top">
-  <p>Find me on social media.</p>
-  <a href="https://www.linkedin.com/in/winston-dsouza-071a4214b" target="_blank">
-  <i class="fa fa-linkedin-square w3-hover-opacity"> </i>
-</a>
-  <a href="https://www.linkedin.com/in/winston-dsouza-071a4214b" target="_blank">
-    <i class="fa fa-github"> </i>
     
-    </a>
-  <br>
- <centre>winstondsouza688@gmail.com</centre>
-</footer>
-
+    
+</div>
+       
+   
+           
+       
+</div> 
 </body>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" ></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" ></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" ></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.9"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.js"></script>
+
+<script>
+        var typed = new Typed('#typed', {
+          stringsElement: '#typed-strings',
+          smartBackspace: true ,// Default value
+          typeSpeed:25,
+          backSpeed:20,
+          loop: true
+        });
+        
+           
+
+            $(document).on('click', '[data-toggle="lightbox"]', function(event) {
+    event.preventDefault();
+    $(this).ekkoLightbox();
+});
+baguetteBox.run('.tz-gallery');
+            
+           
+      </script>
 </html>
