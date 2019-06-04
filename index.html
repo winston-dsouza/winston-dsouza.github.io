@@ -10,6 +10,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.css">
   <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   <link rel="stylesheet" type="text/css" href="style.css">
   <!-- Primary Meta Tags -->
   <meta name="title" content="Winston Dsouza">
@@ -48,7 +49,7 @@
   <div class="d-flex flex-column justify-content-between" style="max-width:100%">
     <!--profile card starts-->
     <div class="m-2 mt-5 p-1 pt-2 mx-auto"
-      style="background-color:rgba(255, 255, 255, 0.8);border-radius: 1.3rem; min-width: 100px ; " id="div_sz">
+      style="background-color:rgba(255, 255, 255, 0.8);border-radius: 1.3rem; min-width: 100px ; "  data-aos="zoom-in" id="div_sz">
       <!-- profile image-->
       <div id="profile_image">
         <img src="images/my_pic.jpg" alt="" class="img-fluid rounded-circle shadow m-2"
@@ -92,7 +93,7 @@
 
     <!-- navigation bar starts-->
     <div class=" m-5  p-2  mx-auto"
-      style="background-color: rgba(255, 255, 255, 0.8);border-radius: 3rem; max-width: 550px;">
+      style="background-color: rgba(255, 255, 255, 0.8);border-radius: 3rem; max-width: 550px;" data-aos="fade-up">
       <ul class="nav justify-content-center" id="navi">
         <li class="nav-item">
           <a class="nav-link " href="#education"><i class="fas fa-graduation-cap"></i> Education</a>
@@ -111,7 +112,7 @@
     <!--navigation bar ends-->
 
     <!--education card starts-->
-    <div class="mx-2 my-3 p-2 card-deck" style="background-color:rgba(0,0,0,0);" id="education">
+    <div class="mx-2 my-3 p-2 card-deck" style="background-color:rgba(0,0,0,0);" id="education" data-aos="fade-down-right">
       <div class="mx-3 p-3 pb-3 card mx-auto pl-4 pr-4"
         style="background-color:rgba(255, 255, 255, 0.6);border-radius: 0.5rem ; max-width: 1000px; ">
         <p class="text-center  h3"><i class="fas fa-graduation-cap"></i> Education</h1>
@@ -156,7 +157,7 @@
     </div>
     <!-- education card ends-->
     <!-- Trainings card start-->
-    <div class="mx-2 mt-3 p-2 card-deck" style="background-color:rgba(0,0,0,0);" id="trainings">
+    <div class="mx-2 mt-3 p-2 card-deck" style="background-color:rgba(0,0,0,0);" id="trainings" data-aos="fade-down-left">
       <div class="mx-3 my-3  p-3 pb-3 card mx-auto pl-4 pr-4"
         style="background-color:rgba(255, 255, 255, 0.6);border-radius: 0.5rem ; max-width: 1000px; ">
         <p class="text-center  h3"><i class="fas fa-chalkboard"></i> Trainings</h1>
@@ -200,13 +201,38 @@
     </div>
     <!-- trainings card ends-->
     <!-- project card starts-->
-    <div class="mx-2 my-3 p-2 card-deck" style="background-color:rgba(0,0,0,0);" id="projects">
+    <div class="mx-2 my-3 p-2 card-deck" style="background-color:rgba(0,0,0,0);" id="projects" data-aos="fade-down-right">
       <div class="mx-3 my-3  p-3  card mx-auto pl-4 pr-4 "
         style="background-color: rgba(255, 255, 255, 0.6);border-radius: 0.5rem ; max-width: 1000px; ">
         <p class="text-center  h3"><i class="fas fa-project-diagram"></i> Projects</h1>
           <hr />
           <div class="card-group pb-3">
 
+            <div class="card  shadow rounded">
+              <img class="card-img-top img-fluid" src="images/resume/indexpage.png">
+              <div class="card-body">
+                <p class="card-title h5">Resume Builder</p>
+                <p class="card-text font-weight-italic">The  Online Resume Builder has been 
+                developed using the Django Framework to override the problems prevailing in the practising manual system.
+                 It is connected to the sqlite3 database. This website is developed as part of the python mini project.</p>
+                <a href="images/resume/index.png" data-toggle="lightbox" data-gallery="example-gallery3">
+                  view screen shots <i class="fas fa-eye"></i>
+                </a>
+                <a href="images/resume/login.png" data-toggle="lightbox" data-gallery="example-gallery3">
+                </a>
+                <a href="images/resume/signup.png" data-toggle="lightbox" data-gallery="example-gallery3">
+                </a>
+                <a href="images/resume/resume.png" data-toggle="lightbox" data-gallery="example-gallery3">
+                </a>
+                <a href="images/resume/education.png" data-toggle="lightbox" data-gallery="example-gallery3">
+                </a>
+              </div>
+              <div class="card-footer">
+                <small class="text-muted"><a href="https://github.com/winston-dsouza/Resume-Builder"
+                    target="_blank">
+                    View on Github <i class="fab fa-github"></i></a></small>
+              </div>
+            </div>
             <div class="card  shadow rounded">
               <img class="card-img-top img-fluid" src="images/cart.png"  height="600px">
               <div class="card-body">
@@ -292,25 +318,14 @@
                     View on Github <i class="fab fa-github"></i></a></small>
               </div>
             </div>
-            <div class="card shadow rounded">
-              <div class="card-body">
-                <h5 class="card-title">My Personal Website</h5>
-                <p class="card-text">Developed a responsive personal website using HTML5,CSS3,Bootstrap 4 and Javascript
-                </p>
-              </div>
-              <div class="card-footer">
-                <small class="text-muted"><a href="https://github.com/winston-dsouza/winston-dsouza.github.io"
-                    target="_blank">
-                    View on Github <i class="fab fa-github"></i></a></small>
-              </div>
-            </div>
+            
           </div>
       </div>
 
     </div>
     <!--project card ends-->
     <!--contact card starts-->
-    <div class="card-deck mx-3" style="background-color:rgba(0,0,0,0);border-radius: 0rem ;" id="contact">
+    <div class="card-deck mx-3" style="background-color:rgba(0,0,0,0);border-radius: 0rem ;" id="contact" data-aos="flip-up">
       <div class="mx-3 my-3  p-3 pb-5 mb-5 card mx-auto"
         style="background-color:rgba(255, 255, 255, 0.8);border-radius: 0.5rem ; max-width: 1000px; min-width: 320px;">
         <p class="text-center h3"><i class="fas fa-user-alt"></i> Contact Me</h1>
@@ -346,6 +361,7 @@
 <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.9"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.js"></script>
 <script type="text/javascript" src="https://platform.linkedin.com/badges/js/profile.js" async defer></script>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-139227182-1"></script>
 <script>
@@ -373,6 +389,16 @@
   });
   baguetteBox.run('.tz-gallery');
 
+
+</script>
+<script>
+   AOS.init({
+				easing: 'ease-out-back',
+				duration: 1000
+			});
+</script>
+<script>
+		hljs.initHighlightingOnLoad();
 
 </script>
 
