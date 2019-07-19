@@ -194,3 +194,4 @@ p {
        transform: translateY(-15px);
      }
    }
+   .row:before, .row:after {display: none !important;}
