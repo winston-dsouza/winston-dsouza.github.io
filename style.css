@@ -1,10 +1,11 @@
 body {
-    background: rgb(137,58,189);
-    background: linear-gradient(68deg, rgba(137,58,189,1) 37%, rgba(255,210,125,1) 100%);
     max-width: 100%;
     overflow-x:hidden;
-    margin:0;
+    margin:40px;
     font-family: 'Poppins';
+    position: relative;
+    background: rgb(118,109,255);
+    background: linear-gradient(90deg, rgba(118,109,255,1) 30%, rgba(136,243,255,1) 100%);
 }
 
 
@@ -12,16 +13,47 @@ html {
     position: relative;
     min-height: 100%;
     max-width: 100%;
-    font-style: "helvatica"
+    font-style: "helvatica";
+    margin:0px;
+}
+
+#small{
+  margin-top: 80px;
+}
+.mypic{
+   border-radius:1.3rem;
+}
+  
+@media screen and (max-width: 600px) {
+  #bg {
+    display:none;
+      
+    }
+    #small{
+      margin-top: 0px;
+    }
+    body {
+      background: linear-gradient(90deg, rgba(118,109,255,1) 30%, rgba(136,243,255,1) 100%);
+      padding: 12px;
+      margin: 0px;
+    
+  }
+  
+
+
+}
+#banner_content {
+  background-color: rgba(0, 0, 0, 0);
+  
 }
 
 ::selection {
-    background-color: #1abc9c;
+    background-color: #75eaff;
     color: #ffffff;
 }
 
 ::-moz-selection {
-    background-color: #1abc9c;
+    background-color: #1a66bc;
     color: #ffffff;
 }
 
@@ -40,7 +72,7 @@ a:active {
 a{
     text-decoration: none;
     outline: none;
-    color: rgb(14, 124, 158);
+    color: rgb(158, 14, 14);
     
 }
 
@@ -54,48 +86,6 @@ p {
     font-family: "Poppins", sans-serif;
 }
 
-.social-icon {
-    text-align: center;
-}
-
-.social-icon:before,
-.social-icon:after {
-  content: " ";
-  display: table;
-}
-
-.social-icon:after {
-  clear: both;
-}
-
-.social-icon li {
-    display: inline-block;
-    margin: 2px 3px;
-    align-content: center;
-  }
-.social-icon li a {
-    font-size: 35px;
-    color:black;
-    text-align: center;
-    align-content: center;
-    
-  }
-  .social-icon li a:hover{
-      color:rgb(105, 96, 96);
-  }
- 
-
-  
-  @media screen and (max-width: 600px) {
-    .social-icon li a {
-        font-size: 30px;
-        color:black;
-        text-align: center;
-        align-content: center;
-        
-      }
-
-  }
      li.nav-item a:hover{
     text-decoration: none;
     outline: none;
@@ -120,7 +110,7 @@ p {
   div.hov p.h6 a{
       text-decoration: none;
       outline: none;
-      color: rgb(72, 197, 228);
+      color: rgb(144, 226, 247);
       
   }
   div.hov p.h6 a:hover{
@@ -129,18 +119,55 @@ p {
     color: rgb(193, 196, 199);
     
 }
- 
 
-  
+
+  #navc{
+    background:whitesmoke;
+    border-radius: 2rem;
+    margin:20px;
+  }
   #navi li a{
     text-decoration: none;
     outline: none;
     font-weight: 600;
+    font-size: 16px;
     color:  black;
     clear:both;
-    
-    
+    padding: 10px;
+    margin:2px;
   }
+  .skill{
+    margin-left:20px;
+    margin-right: 20px;
+  }
+  
+  @media screen and (max-width: 600px) {
+    #navi li a{
+      text-decoration: none;
+      outline: none;
+      font-weight: 600;
+      font-size: 16px;
+      color:  black;
+      clear:both;
+      padding: 10px;
+      margin:2px;
+    }
+    #navc{
+      background:white;
+      border-style:none;
+      
+    }
+    .skill{
+      background-color: #ffffff;
+      border-radius: 2rem;
+      margin:20px 0px 20px 0px;
+      margin-left:0px;
+      margin-right: 0px;
+    }
+   
+  }
+
+
   #navi li a:focus,a:active{
     text-decoration: none;
     outline: none;
@@ -149,9 +176,10 @@ p {
   #navi li a:hover{
     
     font-weight: 600;
-    color:rgb(3, 123, 153);
-    
-    
+    color:rgb(255, 255, 255);
+    background-color: rgb(118,109,255);
+    border-radius: 2.5rem;
+
   }
   #fontss p {
       font-weight: 700;
@@ -195,3 +223,92 @@ p {
      }
    }
    .row:before, .row:after {display: none !important;}
+   .social-icon {
+    list-style: none;
+    padding: 0px;
+    padding-left: 0px;
+    margin: 0;
+    margin-top: 15px;
+  }
+  
+  .social-icon:before,
+  .social-icon:after {
+    content: " ";
+    display: table;
+  }
+  
+  .social-icon li {
+    display: inline-block;
+    margin: 2px 4px;
+  }
+  
+  .social-icon li a {
+    display: block;
+    width: 40px;
+    height: 40px;
+    line-height: 42px;
+    color: #fff;
+    text-align: center;
+    border: 0 none;
+    border-radius: 50%;
+    font-size: 17px;
+    box-shadow: 0px 1px 2px 0px rgba(90, 91, 95, 0.15);
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .social-icon li a:hover {
+     box-shadow: 0px 8px 15px 0px rgba(83, 83, 83, 0.33);
+  }
+  .social-icon li a:hover {
+    color: rgb(255, 255, 255);
+  }
+  
+  .facebook {
+     background-color: #3b5998;
+  }
+  
+
+  .google-plus {
+     background-color: #dd4b39;
+  }
+  
+  .instagram {
+     background-color: #464545;
+  }
+  
+  .linkedin {
+     background-color: #0077b5;
+  }
+  
+  .github {
+     background-color: #333333;
+  }
+  
+  @media screen and (max-width: 600px) {
+      .social-icon {
+        text-align: center;
+      }
+
+  }
+  .text{
+     background: linear-gradient(90deg, rgb(87, 76, 243) 30%, rgba(136,243,255,1) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  .cardhov :hover {
+    background: linear-gradient(90deg, rgba(118,109,255,1) 30%, rgba(136,243,255,1) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: rgb(38, 30, 139);
+  }
+ 
+ 
+  .zoom {
+    transition: transform .2s; /* Animation */
+  }
+  
+  .zoom:hover {
+    transform: scale(1.1); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+  }
+
+
+    

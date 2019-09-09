@@ -1,18 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.css">
   <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
-  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css">
+  <link rel="stylesheet" href="style.css">
   <!-- Primary Meta Tags -->
   <meta name="title" content="Winston Dsouza">
   <meta name="description" content="My personal website! :3">
@@ -35,7 +33,7 @@
   <link rel="manifest" href="images/manifest.json">
   <meta name="msapplication-TileColor" content="#ffffff">
   <meta name="msapplication-TileImage" content="images/ms-icon-144x144.png">
-  <meta name="theme-color" content="#ffffff">
+  <meta name="theme-color" content="#766dff">
   <title>Winston Dsouza</title>
   <meta name="google-site-verification" content="7NvY9Vsj7rttvGzNv6bgDLhgzpnshODdDS5ciUlTOKY" />
   <!-- Open Graph / Facebook -->
@@ -47,336 +45,278 @@
   <meta name="author" content="Winston Dsouza">
 </head>
 
+
 <body>
-  <div class="d-flex flex-column justify-content-between" style="max-width:100%">
-    <!--profile card starts-->
-    <div class="m-2 mt-5 p-1 pt-2 mx-auto"
-      style="background-color:rgba(255, 255, 255, 0.8);border-radius: 1.3rem; min-width: 6.25rem ; " data-aos="zoom-in"
-      id="div_sz">
-      <!-- profile image-->
-      <div id="profile_image">
-        <img src="images/my_pic.jpg" alt="" class="img-fluid rounded-circle shadow m-2"
-          style="height: 300px;max-width: 300px; ">
+  <!--profile picture card-->
+  <div class="mx-auto" id="small">
+    <div class="row px-2 py-3  bg-white shadow-lg mx-auto" style="border-radius: 1.3rem; max-width: 800px;">
+      <div class="col-md m-2 mypic">
+        <img src="images/my_pic.jpg" alt="" srcset="" class="img-fluid rounded-circle shadow-lg">
       </div>
-      <!-- pofile content-->
-      <div id="profile-content">
-        <!--typing intro-->
-        <div class="h5 pt-1">
-          <div style="text-align: center" class="m-2">
-            <div id="typed-strings">
-              <p>Hi I am <strong>Winston Dsouza.</strong>^2000</p>
-              <p> I am a <strong>Software Developer</strong>^2000</p>
-            </div>
-            <span id="typed"></span>
+      <div class="col-md m-2">
+        <div class="mt-2 pt-2">
+          <div class="h5">Hi, I am </div>
+          <div class="h2 font-weight-bolder">Winston D'Souza </div>
+          <div class="h5">Software Developer </div>
+          <div class="pt-1 mt-3 mx-1 h6"><i class="fas fa-map-marker-alt"></i> Mangaluru</div>
+          <div class="pt-1 mt-3 mx-1  h6"><i class="fas fa-graduation-cap"></i> St Joseph Engineering College</div>
+          <!-- Social media icons-->
+          <div class="social ">
+            <ul class="social-icon">
+              <li><a href="https://www.linkedin.com/in/winston-dsouza/" target="_blank" class="linkedin"><i
+                    class="fab fa-linkedin" id="linkedin"></i></a></li>
+              </li>
+              <li><a href="https://github.com/winston-dsouza" target="_blank" class="github"><i class="fab fa-github"
+                    id="git"></i></a></li>
+              </li>
+              <li><a href="https://www.facebook.com/winston.dsouza.in" target="_blank" class="facebook"><i
+                    class="fab fa-facebook" id="face"></i></a></li>
+              </li>
+              <li><a href="https://www.instagram.com/dsowinston/" target="_blank" class="instagram"><i
+                    class="fab fa-instagram" id="insta"></i></a></li>
+              </li>
+            </ul>
           </div>
+          <!--Social media icon ends-->
         </div>
-        <!-- typing intro ends-->
-        <!-- Social media icons-->
-        <div class="social">
-          <ul class="social-icon pl-3">
-            <li><a href="https://www.linkedin.com/in/winston-dsouza/" target="_blank" class="linkedin"><i
-                  class="fab fa-linkedin" id="linkedin"></i></a></li>
-            </li>
-            <li><a href="https://github.com/winston-dsouza" target="_blank" class="github"><i class="fab fa-github"
-                  id="git"></i></a></li>
-            </li>
-            <li><a href="https://www.facebook.com/winston.dsouza.in" target="_blank" class="facebook"><i
-                  class="fab fa-facebook" id="face"></i></a></li>
-            </li>
-            <li><a href="https://www.instagram.com/dsowinston/" target="_blank" class="instagram"><i
-                  class="fab fa-instagram" id="insta"></i></a></li>
-            </li>
-          </ul>
-
-        </div>
-        <!--Social media icon ends-->
       </div>
     </div>
-    <!--profile card ends-->
-    <div class="arrow bounce mt-1 m-0 p-1 mx-auto">
-      <a class="fa fa-arrow-down fa-2x" href="#scroll" style="color: white; text-decoration: none;"></a>
-    </div>
-    <div id="scroll" class="m-0"></div>
-    <!-- navigation bar starts-->
-    <div class=" m-4  p-2  mx-auto"
-      style="background-color: rgba(255, 255, 255, 0.8);border-radius: 3rem; max-width: 34.375rem;" data-aos="fade-up">
-      <ul class="nav justify-content-center" id="navi">
-        <li class="nav-item">
-          <a class="nav-link " href="#education"><i class="fas fa-graduation-cap"></i> Education</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#trainings"><i class="fas fa-chalkboard"></i> Trainings</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#projects"><i class="fas fa-project-diagram"></i> Projects</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#contact"><i class="fas fa-user-alt"></i> Contact</a>
-        </li>
-      </ul>
-    </div>
-    <!--navigation bar ends-->
-
-    <!--education card starts-->
-    <div class="mx-2 my-3 p-2 card-deck" style="background-color:rgba(0,0,0,0);" id="education"
-      data-aos="fade-down-right">
-      <div class="mx-3 p-3 pb-3 card mx-auto pl-4 pr-4"
-        style="background-color:rgba(255, 255, 255, 0.6);border-radius: 0.5rem ; max-width: 62.5rem; ">
-        <p class="text-center  h3"><i class="fas fa-graduation-cap"></i> Education</h1>
-
-          <hr />
-          <div class="card-deck justify-content-center">
-            <div class="card text-white bg-info shadow-lg mb-3 " style="border-radius:2rem;max-width:25rem">
-              <div class="card-body ">
-                <h5 class="card-title">
-                  <p class=" font-weight-bold h7"><i class="far fa-calendar-alt"></i> 2016-2020</p>
-                </h5>
-                <hr>
-                <h5 class="card-text  h6">Bachelor of Engineering(B.E), <br />Computer Science</h5>
-                <hr>
-                <p class="card-text  h6">St.Joseph Engineering College</p>
-              </div>
-            </div>
-            <div class="card text-white bg-secondary shadow-lg mb-3 " style="border-radius:2rem;max-width:25rem">
-              <div class="card-body ">
-                <h5 class="card-title">
-                  <p class=" font-weight-bold h7"><i class="far fa-calendar-alt"></i> 2014-2016</p>
-                </h5>
-                <hr>
-                <h5 class="card-text  h6">XII(Senior Secondary),<br /> Science</h5>
-                <hr>
-                <p class="card-text  h6">State Board(Vijaya College Mulki)</p>
-              </div>
-            </div>
-            <div class="card text-white bg-info shadow-lg mb-3 " style="border-radius:2rem;max-width:25rem">
-              <div class="card-body ">
-                <h5 class="card-title">
-                  <p class=" font-weight-bold h7"><i class="far fa-calendar-alt"></i> 2014</p>
-                </h5>
-                <hr>
-                <h5 class="card-text  h6">X(Secondary)<br /> </h5>
-                <hr>
-                <p class="card-text  h6">State Board<br />(Shree Narayana Guru School)</p>
-              </div>
-            </div>
-          </div>
-      </div>
-    </div>
-    <!-- education card ends-->
-    <!-- Trainings card start-->
-    <div class="mx-2 mt-3 p-2 card-deck" style="background-color:rgba(0,0,0,0);" id="trainings"
-      data-aos="fade-down-left">
-      <div class="mx-3 my-3  p-3 pb-3 card mx-auto pl-4 pr-4"
-        style="background-color:rgba(255, 255, 255, 0.6);border-radius: 0.5rem ; max-width: 62.5rem; ">
-        <p class="text-center  h3"><i class="fas fa-chalkboard"></i> Trainings</h1>
-          <hr />
-          <div class="card-deck justify-content-center">
-            <div class="card text-light shadow bg-secondary mb-3" style="border-radius:2rem;max-width:20rem">
-              <div class="card-body ">
-                <h5 class="card-title">
-                  <p class="font-weight-bold h7"><i class="far fa-calendar-alt"></i> Jan 2018- Feb 2018</p>
-                </h5>
-                <hr>
-                <h5 class="card-title  h6">Android Application Development</h5>
-                <hr>
-                <p class="card-text  h6">Internshala Trainings (online)</p>
-                <div class="tz-gallery hov">
-                  <p class=" h6"><a href="images/android.jpg" class="lightbox">View Certification <i
-                        class="fas fa-eye"></i></a></p>
-                </div>
-              </div>
-            </div>
-            <div class="card text-light bg-secondary shadow mb-3" style="border-radius:2rem;max-width:20rem">
-              <div class="card-body ">
-                <h5 class="card-title">
-                  <p class="font-weight-bold h7"><i class="far fa-calendar-alt"></i> Aug 2017 -Sep 2017</p>
-                </h5>
-                <hr>
-                <h5 class="card-title h6 ">Web Development</h5>
-                <hr>
-                <p class="card-text  h6">Internshala Trainings (online) </p>
-                <div class=" tz-gallery hov">
-                  <p class=" h6"><a href="images/web.jpg" class="lightbox" style="display:inline-block ; ">View
-                      Certification <i class="fas fa-eye"></i></a></p>
-                </div>
-              </div>
-            </div>
-          </div>
-
-
-      </div>
-
-    </div>
-    <!-- trainings card ends-->
-    <!-- project card starts-->
-    <div class="mx-2 my-3 p-2 card-deck" style="background-color:rgba(0,0,0,0);" id="projects"
-      data-aos="fade-down-right">
-      <div class="mx-3 my-3  p-3  card mx-auto pl-4 pr-4 "
-        style="background-color: rgba(255, 255, 255, 0.6);border-radius: 0.5rem ; max-width: 62.5rem; ">
-        <p class="text-center  h3"><i class="fas fa-project-diagram"></i> Projects</h1>
-          <hr />
-          <div class="card-group pb-3">
-
-            <div class="card  shadow rounded">
-              <img class="card-img-top img-fluid" src="images/resume/indexpage.png">
-              <div class="card-body">
-                <p class="card-title h5">Resume Builder</p>
-                <p class="card-text font-weight-italic">The Online Resume Builder has been
-                  developed using the Django Framework to override the problems prevailing in the practising manual
-                  system.
-                  It is connected to the sqlite3 database. This website is developed as part of the python mini project.
-                </p>
-                <a href="images/resume/index.png" data-toggle="lightbox" data-gallery="example-gallery3">
-                  view screen shots <i class="fas fa-eye"></i>
-                </a>
-                <a href="images/resume/login.png" data-toggle="lightbox" data-gallery="example-gallery3">
-                </a>
-                <a href="images/resume/signup.png" data-toggle="lightbox" data-gallery="example-gallery3">
-                </a>
-                <a href="images/resume/resume.png" data-toggle="lightbox" data-gallery="example-gallery3">
-                </a>
-                <a href="images/resume/education.png" data-toggle="lightbox" data-gallery="example-gallery3">
-                </a>
-              </div>
-              <div class="card-footer">
-                <small class="text-muted"><a href="https://github.com/winston-dsouza/Resume-Builder"
-                    target="_blank">
-                    View on Github <i class="fab fa-github"></i></a></small>
-              </div>
-            </div>
-            <div class="card  shadow rounded">
-              <img class="card-img-top img-fluid" src="images/cart.png"  height="37.5rem">
-              <div class="card-body">
-                <p class="card-title h5">Food Ordering Application</p>
-                <p class="card-text font-weight-italic">Developed a food ordering app and Order Retrieval System which
-                  runs on desktop using Java,JavaFX connected to MySQL Database as a part of DBMS mini project</p>
-                <a href="images/first_page.png" data-toggle="lightbox" data-gallery="example-gallery">
-                  view screen shots <i class="fas fa-eye"></i>
-                </a>
-                <a href="images/SignUp.png" data-toggle="lightbox" data-gallery="example-gallery">
-                </a>
-                <a href="images/Login.png" data-toggle="lightbox" data-gallery="example-gallery">
-                </a>
-                <a href="images/confimation_dialog.png" data-toggle="lightbox" data-gallery="example-gallery">
-                </a>
-                <a href="images/cart.png" data-toggle="lightbox" data-gallery="example-gallery">
-                </a>
-                <a href="images/cart2.png" data-toggle="lightbox" data-gallery="example-gallery">
-                </a>
-                <a href="images/setting.png" data-toggle="lightbox" data-gallery="example-gallery">
-                </a>
-                <a href="images/orders_staus.png" data-toggle="lightbox" data-gallery="example-gallery">
-                </a>
-                <a href="images/pay.png" data-toggle="lightbox" data-gallery="example-gallery">
-                </a>
-                <a href="images/thank.png" data-toggle="lightbox" data-gallery="example-gallery">
-                </a>
-                <a href="images/res.png" data-toggle="lightbox" data-gallery="example-gallery">
-                </a>
-                <a href="images/login_admin.png" data-toggle="lightbox" data-gallery="example-gallery">
-                </a>
-                <a href="images/admin.png" data-toggle="lightbox" data-gallery="example-gallery">
-                </a>
-                <a href="images/employee_add.png" data-toggle="lightbox" data-gallery="example-gallery">
-                </a>
-                <a href="images/login_employee.png" data-toggle="lightbox" data-gallery="example-gallery">
-                </a>
-                <a href="images/orders.png" data-toggle="lightbox" data-gallery="example-gallery">
-                </a>
-                <a href="images/order_deliver.png" data-toggle="lightbox" data-gallery="example-gallery">
-                </a>
-              </div>
-              <div class="card-footer">
-                <small class="text-muted"><a href="https://github.com/winston-dsouza/Online-Food-Ordering-System"
-                    target="_blank">
-                    View on Github <i class="fab fa-github"></i></a></small>
-              </div>
-            </div>
-            <div class="card shadow  rounded">
-              <img class="card-img-top img-fluid " src="images/ecommerce1.png" alt="Card image cap" height="600px">
-              <div class="card-body">
-                <p class="card-title h5">Planet Shopify-Ecommerce website</p>
-                <p class="card-text"> Developed a responsive ecommerce website that will work seamlessly across
-                  different devices. Used PHP at backend and html5, css3, bootstrap4 at frontend and connected to MySQL
-                  database.</p>
-                <a href="images/planet.png" data-toggle="lightbox" data-gallery="example-gallery2">
-                  view screen shots <i class="fas fa-eye"></i>
-                </a>
-                <a href="images/product.png" data-toggle="lightbox" data-gallery="example-gallery2">
-                </a>
-                <a href="images/mobile.gif" data-toggle="lightbox" data-gallery="example-gallery2">
-                </a>
-                <a href="images/webgif.gif" data-toggle="lightbox" data-gallery="example-gallery2">
-                </a>
-                <a href="images/productgif.gif" data-toggle="lightbox" data-gallery="example-gallery2">
-                </a>
-                <a href="images/loginweb.png" data-toggle="lightbox" data-gallery="example-gallery2">
-                </a>
-                <a href="images/aboutus.png" data-toggle="lightbox" data-gallery="example-gallery2">
-                </a>
-                <a href="images/contactweb.png" data-toggle="lightbox" data-gallery="example-gallery2">
-                </a>
-                <a href="images/cartweb.png" data-toggle="lightbox" data-gallery="example-gallery2">
-                </a>
-                <a href="images/thankyou1.png" data-toggle="lightbox" data-gallery="example-gallery2">
-                </a>
-
-                </a>
-              </div>
-              <div class="card-footer">
-                <small class="text-muted"><a href="https://github.com/winston-dsouza/Planet-Shopify-ecommerce-website"
-                    target="_blank">
-                    View on Github <i class="fab fa-github"></i></a></small>
-              </div>
-            </div>
-
-          </div>
-      </div>
-
-    </div>
-    <!--project card ends-->
-    <!--contact card starts-->
-    <div class="card-deck mx-3" style="background-color:rgba(0,0,0,0);border-radius: 0rem ;" id="contact"
-      data-aos="flip-up">
-      <div class="mx-3 my-3  p-3 pb-5 mb-5 card mx-auto"
-        style="background-color:rgba(255, 255, 255, 0.8);border-radius: 0.5rem ; max-width: 62.5rem; min-width: 1.25rem;">
-        <p class="text-center h3"><i class="fas fa-user-alt"></i> Contact Me</h1>
-          <hr />
-          <div class="row text-center ">
-            <div class="email col-md mt-1">
-              <p> <i class="far fa-envelope-open" style="font-size:30px; color:orangered"></i><br />
-                <a href="mailto:winstondsouza688@gmail.com">winstondsouza688@gmail.com</a>
-              </p>
-            </div>
-            <div class="phone  col-md mt-1">
-              <p> <i class="fas fa-mobile" style="font-size:30px; color:rgb(3, 185, 240)"></i><br />
-                <a href="tel:+918971147568">+918971147568</a>
-              </p>
-            </div>
-          </div>
-          <!-- linkedIn Profile Badge-->
-          <div class="d-flex mx-auto mt-3">
-            <div class="LI-profile-badge" data-version="v1" data-size="medium" data-locale="en_US"
-              data-type="horizontal" data-theme="dark" data-vanity="winston-dsouza"><a class="LI-simple-link"
-                href='https://in.linkedin.com/in/winston-dsouza?trk=profile-badge'>Winston Dsouza</a></div>
-          </div>
-          <!-- LinkedIn Profile Badge-->
-      </div>
-    </div>
-    <!-- contact card ends-->
   </div>
+  <!--profile picture card ends-->
+  <!-- navigation bar starts-->
+  <div class=" p-2 my-5 mx-auto shadow-sm bg-white" style=" max-width: 700px; " id="navc">
+    <ul class="nav justify-content-center" id="navi">
+      <li class="nav-item px-2">
+        <a class="nav-link " href="#education"><i class="fas fa-graduation-cap"></i> Education</a>
+      </li>
+      <li class="nav-item px-2">
+        <a class="nav-link" href="#projects"><i class="fas fa-project-diagram"></i> Projects</a>
+      </li>
+      <li class="nav-item px-2">
+        <a class="nav-link" href="#contact"><i class="fas fa-user-alt"></i> Contact</a>
+      </li>
+    </ul>
+  </div>
+  <!--navigation bar ends-->
+
+  <div class=" skill  mt-5 rounded" style="background:rgba(255, 255, 255,0.93);" id="education">
+    <div class="p-4">
+      <div class="h4 font-weight-bold text-center text mb-3"><i class="fas fa-graduation-cap text"></i> Education</div>
+      <hr />
+      <div class="h5 row justify-content-around card-deck p-3">
+        <div class="col-md-3 shadow  mb-3  cardhov zoom rounded" style="background:white;">
+          <div class="card-body ">
+            <h5 class="card-title">
+              <p class=" font-weight-bold h7"><i class="far fa-calendar-alt"></i> 2016-2020</p>
+            </h5>
+            <hr>
+            <h5 class="card-text  h6">Bachelor of Engineering(B.E), <br />Computer Science</h5>
+            <hr>
+            <p class="card-text  h6">St.Joseph Engineering College</p>
+          </div>
+        </div>
+        <div class=" col-md-3 shadow bg-white mb-3 cardhov zoom rounded" style="background:white;">
+          <div class="card-body ">
+            <h5 class="card-title">
+              <p class=" font-weight-bold h7"><i class="far fa-calendar-alt "></i> 2014-2016</p>
+            </h5>
+            <hr>
+            <h5 class="card-text  h6">XII(Senior Secondary),<br /> Science</h5>
+            <hr>
+            <p class="card-text  h6">State Board(Vijaya College Mulki)</p>
+          </div>
+        </div>
+        <div class=" col-md-3 shadow bg-white  mb-3 cardhov zoom rounded" style="background:white;">
+          <div class="card-body ">
+            <h5 class="card-title">
+              <p class=" font-weight-bold h7"><i class="far fa-calendar-alt"></i> 2014</p>
+            </h5>
+            <hr>
+            <h5 class="card-text  h6">X(Secondary)<br /> </h5>
+            <hr>
+            <p class="card-text  h6">State Board<br />(Shree Narayana Guru School)</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+    <!--Internship section ends-->
+  <!--Pojects Section Starts-->
+  <div class=" mt-5  skill mb-5 rounded" style="background:rgba(255, 255, 255,0.93);" id="projects">
+    <div class="p-4">
+
+      <div class="h4  font-weight-bold  text-center text mb-3 "><i class="fas fa-project-diagram text"></i> Projects
+      </div>
+      <hr />
+
+      <div class="owl-carousel owl-theme ">
+          <div class="shadow bg-white rounded mx-1 mb-3  item my-5" style="background:white;width: 300px;">
+            <div class="card-body">
+              <p class="card-title h5">Movie Recommender System</p>
+              <p class="card-text font-weight-italic">A recommendation system is a type of information filtering
+                 system built using python and uses machine learing ,which takes
+                movie genre as input and displays top 5 movies in the specified category.
+              </p>
+            </div>
+              <div class="card-footer">
+                <small class="text-muted"><a href="https://github.com/winston-dsouza/Movie-Recommender-System" target="_blank">
+                    View on Github <i class="fab fa-github"></i></a></small>
+              </div>
+            </div>
+
+        <div class="shadow bg-white  rounded mb-3  item car" style="background:white;width: 300px;">
+          <img class="card-img-top img-fluid" src="images/resume/indexpage.png">
+          <div class="card-body overlay">
+            <p class="card-title h5">Resume Builder</p>
+            <p class="card-text font-weight-italic">The Online Resume Builder has been
+              developed using the Django Framework to override the problems prevailing in the practising manual
+              system.
+              It is connected to the sqlite3 database. This website is developed as part of the python mini project.
+            </p>
+            <a href="images/resume/index.png" data-toggle="lightbox" data-gallery="example-gallery3">
+              view screen shots <i class="fas fa-eye"></i>
+            </a>
+            <a href="images/resume/login.png" data-toggle="lightbox" data-gallery="example-gallery3">
+            </a>
+            <a href="images/resume/signup.png" data-toggle="lightbox" data-gallery="example-gallery3">
+            </a>
+            <a href="images/resume/resume.png" data-toggle="lightbox" data-gallery="example-gallery3">
+            </a>
+            <a href="images/resume/education.png" data-toggle="lightbox" data-gallery="example-gallery3">
+            </a>
+          </div>
+          <div class="card-footer">
+            <small class="text-muted"><a href="https://github.com/winston-dsouza/Resume-Builder" target="_blank">
+                View on Github <i class="fab fa-github"></i></a></small>
+          </div>
+        </div>
+
+        <div class=" shadow bg-white rounded mb-3  item" style="background:white;width: 300px;">
+          <img class="card-img-top img-fluid" src="images/food/cart.png" height="37.5rem">
+          <div class="card-body">
+            <p class="card-title h5">Food Ordering Application</p>
+            <p class="card-text font-weight-italic">Developed a food ordering app and Order Retrieval System which
+              runs on desktop using Java,JavaFX connected to MySQL Database as a part of DBMS mini project</p>
+            <a href="images/food/first_page.png" data-toggle="lightbox" data-gallery="example-gallery">
+              view screen shots <i class="fas fa-eye"></i>
+            </a>
+            <a href="images/food/SignUp.png" data-toggle="lightbox" data-gallery="example-gallery">
+            </a>
+            <a href="images/food/Login.png" data-toggle="lightbox" data-gallery="example-gallery">
+            </a>
+            <a href="images/food/confimation_dialog.png" data-toggle="lightbox" data-gallery="example-gallery">
+            </a>
+            <a href="images/food/cart.png" data-toggle="lightbox" data-gallery="example-gallery">
+            </a>
+            <a href="images/food/cart2.png" data-toggle="lightbox" data-gallery="example-gallery">
+            </a>
+            <a href="images/food/setting.png" data-toggle="lightbox" data-gallery="example-gallery">
+            </a>
+            <a href="images/food/orders_staus.png" data-toggle="lightbox" data-gallery="example-gallery">
+            </a>
+            <a href="images/food/pay.png" data-toggle="lightbox" data-gallery="example-gallery">
+            </a>
+            <a href="images/food/thank.png" data-toggle="lightbox" data-gallery="example-gallery">
+            </a>
+            <a href="images/food/res.png" data-toggle="lightbox" data-gallery="example-gallery">
+            </a>
+            <a href="images/food/login_admin.png" data-toggle="lightbox" data-gallery="example-gallery">
+            </a>
+            <a href="images/food/admin.png" data-toggle="lightbox" data-gallery="example-gallery">
+            </a>
+            <a href="images/food/employee_add.png" data-toggle="lightbox" data-gallery="example-gallery">
+            </a>
+            <a href="images/food/login_employee.png" data-toggle="lightbox" data-gallery="example-gallery">
+            </a>
+            <a href="images/food/orders.png" data-toggle="lightbox" data-gallery="example-gallery">
+            </a>
+            <a href="images/food/order_deliver.png" data-toggle="lightbox" data-gallery="example-gallery">
+            </a>
+          </div>
+          <div class="card-footer">
+            <small class="text-muted"><a href="https://github.com/winston-dsouza/Online-Food-Ordering-System"
+                target="_blank">
+                View on Github <i class="fab fa-github"></i></a></small>
+          </div>
+
+        </div>
+        <div class="shadow bg-white  rounded mb-3  item" style="background:white;width: 300px;">
+          <img class="card-img-top img-fluid " src="images/ecom/ecommerce1.png" alt="Card image cap" height="600px">
+          <div class="card-body">
+            <p class="card-title h5">Planet Shopify-Ecommerce website</p>
+            <p class="card-text"> Developed a responsive ecommerce website that will work seamlessly across
+              different devices. Used PHP at backend and html5, css3, bootstrap4 at frontend and connected to MySQL
+              database.</p>
+            <a href="images/ecom/planet.png" data-toggle="lightbox" data-gallery="example-gallery2">
+              view screen shots <i class="fas fa-eye"></i>
+            </a>
+            <a href="images/ecom/product.png" data-toggle="lightbox" data-gallery="example-gallery2">
+            </a>
+            <a href="images/ecom/loginweb.png" data-toggle="lightbox" data-gallery="example-gallery2">
+            </a>
+            <a href="images/ecom/aboutus.png" data-toggle="lightbox" data-gallery="example-gallery2">
+            </a>
+            <a href="images/ecom/contactweb.png" data-toggle="lightbox" data-gallery="example-gallery2">
+            </a>
+            <a href="images/ecom/cartweb.png" data-toggle="lightbox" data-gallery="example-gallery2">
+            </a>
+            <a href="images/ecom/thankyou1.png" data-toggle="lightbox" data-gallery="example-gallery2">
+            </a>
+            <a href="images/ecom/webgif.gif" data-toggle="lightbox" data-gallery="example-gallery2">
+            </a>
+            <a href="images/ecom/mobile.gif" data-toggle="lightbox" data-gallery="example-gallery2">
+            </a>
+            <a href="images/ecom/productgif.gif" data-toggle="lightbox" data-gallery="example-gallery2">
+            </a>
+          </div>
+          <div class="card-footer">
+            <small class="text-muted"><a href="https://github.com/winston-dsouza/Planet-Shopify-ecommerce-website"
+                target="_blank">
+                View on Github <i class="fab fa-github"></i></a></small>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+  <!--Project Scetion ends-->
+  <!--contact card starts-->
+  <div class="card-deck mx-1" id="contact">
+    <div class="mx-3 my-3  p-3 pb-5 mb-5 card mx-auto"
+      style="background-color:rgba(255, 255, 255,0.93);border-radius: 0.5rem ; max-width: 62.5rem; min-width: 1.25rem;">
+      <p class="text-center text h4"><i class="fas fa-user-alt text"></i> Contact Me</h1>
+        <hr />
+        <div class="row text-center">
+          <div class="email col-md mt-1 zoom">
+            <p> <i class="far fa-envelope-open" style="font-size:30px; color:orangered"></i><br />
+              <a href="mailto:winstondsouza688@gmail.com">winstondsouza688@gmail.com</a>
+            </p>
+          </div>
+          <div class="phone  col-md mt-1 zoom">
+            <p> <i class="fas fa-mobile" style="font-size:30px; color:rgb(3, 185, 240)"></i><br />
+              <a href="tel:+918971147568">+918971147568</a>
+            </p>
+          </div>
+        </div>
+        <!-- linkedIn Profile Badge-->
+        <div class="d-flex mx-auto mt-3">
+          <div class="LI-profile-badge" data-version="v1" data-size="medium" data-locale="en_US" data-type="horizontal"
+            data-theme="dark" data-vanity="winston-dsouza"><a class="LI-simple-link"
+              href='https://in.linkedin.com/in/winston-dsouza?trk=profile-badge'>Winston Dsouza</a></div>
+        </div>
+        <!-- LinkedIn Profile Badge-->
+    </div>
+  </div>
+  <!-- contact card ends-->
+  
 </body>
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-  integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-  integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-  integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.9"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.js"></script>
 <script type="text/javascript" src="https://platform.linkedin.com/badges/js/profile.js" async defer></script>
-<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-139227182-1"></script>
 <script>
@@ -388,34 +328,40 @@
 </script>
 
 <script>
-  var typed = new Typed('#typed', {
-    stringsElement: '#typed-strings',
-    smartBackspace: true,// Default value
-    typeSpeed: 25,
-    backSpeed: 20,
-    loop: true
-  });
-
-
-
   $(document).on('click', '[data-toggle="lightbox"]', function (event) {
     event.preventDefault();
     $(this).ekkoLightbox();
   });
   baguetteBox.run('.tz-gallery');
-
-
 </script>
+
 <script>
-  AOS.init({
-    disable: 'phone',
-    easing: 'ease-out-back',
-    duration: 1000
-  });
-</script>
-<script>
-  hljs.initHighlightingOnLoad();
+
+  $('.owl-carousel').owlCarousel({
+    items: 4,
+    loop: false,
+    margin: 10,
+    nav: true,
+    URLhashListener: true,
+    autoplayHoverPause: true,
+    startPosition: 'URLHash',
+    navText: ["<i class='fa fa-angle-left' style='font-size:30px ;color:rgb(0, 0, 145)'></i>", "<i class='fa fa-angle-right' style='font-size:30px; color:rgb(0, 0, 145)'></i>"],
+    autoHeight: true,
+    responsive: {
+      0: {
+        items: 1
+      },
+      600: {
+        items: 2
+      },
+      1000: {
+        items: 3
+      }
+    }
+  })
 
 </script>
+
+
 
 </html>
