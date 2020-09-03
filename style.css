@@ -4,8 +4,8 @@ body {
     margin:40px;
     font-family: 'Poppins';
     position: relative;
-    background: rgb(118,109,255);
-    background: linear-gradient(90deg, rgba(118,109,255,1) 30%, rgba(136,243,255,1) 100%);
+    background: rgb(110,117,251);
+    background: linear-gradient(135deg, rgba(110,117,251,1) 8%, rgba(82,62,174,1) 8%, rgba(69,66,163,1) 23%, rgba(42,36,245,1) 23%, rgba(23,35,98,1) 69%, rgba(1,4,181,1) 69%, rgba(3,11,80,1) 90%, rgba(58,45,93,1) 90%);
 }
 
 
@@ -25,7 +25,7 @@ html {
 }
   
 @media screen and (max-width: 600px) {
-  #bg {
+   #bg {
     display:none;
       
     }
@@ -33,13 +33,12 @@ html {
       margin-top: 0px;
     }
     body {
-      background: linear-gradient(90deg, rgba(118,109,255,1) 30%, rgba(136,243,255,1) 100%);
+      background: rgb(110,117,251);
+      background: linear-gradient(228deg, rgba(110,117,251,1) 9%, rgba(82,62,174,1) 9%, rgba(69,66,163,1) 30%, rgba(42,36,245,1) 30%, rgba(128,19,211,1) 55%, rgba(125,20,212,1) 55%, rgba(23,35,98,1) 55%, rgba(1,4,181,1) 56%, rgba(3,11,80,1) 87%, rgba(58,45,93,1) 87%);
       padding: 12px;
       margin: 0px;
     
   }
-  
-
 
 }
 #banner_content {
@@ -104,7 +103,7 @@ p {
     
     display:block;
     width: 100%;               
-    background-color:white;
+    background-color:rgba(255,255, 255, 0.1);
     height: 1px;
   }
   div.hov p.h6 a{
@@ -131,7 +130,7 @@ p {
     outline: none;
     font-weight: 600;
     font-size: 16px;
-    color:  black;
+    color:  rgb(255, 255, 255);
     clear:both;
     padding: 10px;
     margin:2px;
@@ -147,7 +146,7 @@ p {
       outline: none;
       font-weight: 600;
       font-size: 16px;
-      color:  black;
+      color:  rgb(255, 255, 255);
       clear:both;
       padding: 10px;
       margin:2px;
@@ -163,7 +162,9 @@ p {
       margin:20px 0px 20px 0px;
       margin-left:0px;
       margin-right: 0px;
+
     }
+
    
   }
 
@@ -273,7 +274,7 @@ p {
   }
   
   .instagram {
-     background-color: #464545;
+     background-color: #d636c1;
   }
   
   .linkedin {
