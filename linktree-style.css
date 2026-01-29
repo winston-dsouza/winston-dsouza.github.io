@@ -1,0 +1,488 @@
+/* ==================== CSS Variables ==================== */
+:root {
+    --bg-primary: #ffffff;
+    --bg-secondary: #f8f9fa;
+    --text-primary: #1a1a1a;
+    --text-secondary: #6c757d;
+    --accent-color: #8b5cf6;
+    --card-bg: #ffffff;
+    --card-shadow: rgba(0, 0, 0, 0.08);
+    --card-hover-shadow: rgba(0, 0, 0, 0.15);
+    --border-color: rgba(0, 0, 0, 0.1);
+    
+    /* Social Media Brand Colors */
+    --linkedin: #0077b5;
+    --github: #333333;
+    --email: #ea4335;
+    --telegram: #0088cc;
+    --instagram: #e4405f;
+    --facebook: #1877f2;
+    
+    /* Animation */
+    --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+[data-theme="dark"] {
+    --bg-primary: #0f0f0f;
+    --bg-secondary: #1a1a1a;
+    --text-primary: #ffffff;
+    --text-secondary: #a0a0a0;
+    --card-bg: #1a1a1a;
+    --card-shadow: rgba(255, 255, 255, 0.05);
+    --card-hover-shadow: rgba(255, 255, 255, 0.1);
+    --border-color: rgba(255, 255, 255, 0.1);
+}
+
+/* ==================== Global Styles ==================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    background-color: var(--bg-primary);
+    color: var(--text-primary);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    overflow-x: hidden;
+    position: relative;
+    transition: var(--transition);
+}
+
+/* ==================== Background Animation ==================== */
+.background-animation {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    overflow: hidden;
+}
+
+.circle {
+    position: absolute;
+    border-radius: 50%;
+    filter: blur(80px);
+    opacity: 0.3;
+    animation: float 20s infinite ease-in-out;
+}
+
+.circle-1 {
+    width: 300px;
+    height: 300px;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    top: -150px;
+    left: -150px;
+    animation-delay: 0s;
+}
+
+.circle-2 {
+    width: 400px;
+    height: 400px;
+    background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+    bottom: -200px;
+    right: -200px;
+    animation-delay: 5s;
+}
+
+.circle-3 {
+    width: 250px;
+    height: 250px;
+    background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation-delay: 10s;
+}
+
+@keyframes float {
+    0%, 100% {
+        transform: translate(0, 0) scale(1);
+    }
+    33% {
+        transform: translate(30px, -50px) scale(1.1);
+    }
+    66% {
+        transform: translate(-20px, 20px) scale(0.9);
+    }
+}
+
+/* ==================== Container ==================== */
+.container {
+    max-width: 680px;
+    width: 100%;
+    position: relative;
+    z-index: 1;
+    animation: fadeInUp 0.6s ease-out;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* ==================== Profile Section ==================== */
+.profile-section {
+    text-align: center;
+    margin-bottom: 40px;
+    animation: fadeInUp 0.6s ease-out 0.1s backwards;
+}
+
+.profile-image-wrapper {
+    position: relative;
+    width: 120px;
+    height: 120px;
+    margin: 0 auto 24px;
+    animation: scaleIn 0.6s ease-out 0.2s backwards;
+}
+
+@keyframes scaleIn {
+    from {
+        transform: scale(0);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+.profile-image {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid var(--card-bg);
+    box-shadow: 0 8px 32px var(--card-shadow);
+    transition: var(--transition);
+}
+
+.profile-image:hover {
+    transform: scale(1.05);
+    box-shadow: 0 12px 48px var(--card-hover-shadow);
+}
+
+.profile-badge {
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
+    width: 32px;
+    height: 32px;
+    background: linear-gradient(135deg, var(--accent-color), #6366f1);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 3px solid var(--bg-primary);
+    box-shadow: 0 4px 12px rgba(139, 92, 246, 0.4);
+}
+
+.profile-badge i {
+    color: white;
+    font-size: 14px;
+}
+
+.profile-name {
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 8px;
+    background: linear-gradient(135deg, var(--text-primary), var(--accent-color));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.profile-title {
+    font-size: 16px;
+    color: var(--text-secondary);
+    margin-bottom: 4px;
+    font-weight: 500;
+}
+
+.profile-subtitle {
+    font-size: 14px;
+    color: var(--text-secondary);
+    font-weight: 400;
+}
+
+/* ==================== Links Container ==================== */
+.links-container {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin-bottom: 40px;
+}
+
+.link-card {
+    background: var(--card-bg);
+    border: 1px solid var(--border-color);
+    border-radius: 16px;
+    padding: 20px 24px;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    text-decoration: none;
+    color: var(--text-primary);
+    transition: var(--transition);
+    box-shadow: 0 2px 8px var(--card-shadow);
+    position: relative;
+    overflow: hidden;
+    animation: fadeInUp 0.6s ease-out backwards;
+}
+
+.link-card:nth-child(1) { animation-delay: 0.2s; }
+.link-card:nth-child(2) { animation-delay: 0.25s; }
+.link-card:nth-child(3) { animation-delay: 0.3s; }
+.link-card:nth-child(4) { animation-delay: 0.35s; }
+.link-card:nth-child(5) { animation-delay: 0.4s; }
+.link-card:nth-child(6) { animation-delay: 0.45s; }
+.link-card:nth-child(7) { animation-delay: 0.5s; }
+
+.link-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 4px;
+    height: 100%;
+    background: currentColor;
+    opacity: 0;
+    transition: var(--transition);
+}
+
+.link-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 32px var(--card-hover-shadow);
+    border-color: currentColor;
+}
+
+.link-card:hover::before {
+    opacity: 1;
+}
+
+.link-card:active {
+    transform: translateY(-2px);
+}
+
+/* Link Card Icons */
+.link-icon {
+    width: 48px;
+    height: 48px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    flex-shrink: 0;
+    transition: var(--transition);
+}
+
+.link-card:hover .link-icon {
+    transform: scale(1.1) rotate(5deg);
+}
+
+/* Social Media Specific Colors */
+.linkedin {
+    color: var(--linkedin);
+}
+
+.linkedin .link-icon {
+    background: rgba(0, 119, 181, 0.1);
+    color: var(--linkedin);
+}
+
+.github {
+    color: var(--github);
+}
+
+.github .link-icon {
+    background: rgba(51, 51, 51, 0.1);
+    color: var(--github);
+}
+
+[data-theme="dark"] .github {
+    color: #ffffff;
+}
+
+[data-theme="dark"] .github .link-icon {
+    background: rgba(255, 255, 255, 0.1);
+    color: #ffffff;
+}
+
+.email {
+    color: var(--email);
+}
+
+.email .link-icon {
+    background: rgba(234, 67, 53, 0.1);
+    color: var(--email);
+}
+
+.telegram {
+    color: var(--telegram);
+}
+
+.telegram .link-icon {
+    background: rgba(0, 136, 204, 0.1);
+    color: var(--telegram);
+}
+
+.instagram {
+    color: var(--instagram);
+}
+
+.instagram .link-icon {
+    background: linear-gradient(135deg, #f58529, #dd2a7b, #8134af);
+    color: white;
+}
+
+.facebook {
+    color: var(--facebook);
+}
+
+.facebook .link-icon {
+    background: rgba(24, 119, 242, 0.1);
+    color: var(--facebook);
+}
+
+/* Link Content */
+.link-content {
+    flex: 1;
+    text-align: left;
+}
+
+.link-content h3 {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 2px;
+    color: var(--text-primary);
+}
+
+.link-content p {
+    font-size: 13px;
+    color: var(--text-secondary);
+}
+
+/* Link Arrow */
+.link-arrow {
+    font-size: 20px;
+    color: var(--text-secondary);
+    transition: var(--transition);
+}
+
+.link-card:hover .link-arrow {
+    transform: translateX(4px);
+    color: currentColor;
+}
+
+/* ==================== Footer ==================== */
+.footer {
+    text-align: center;
+    padding: 20px 0;
+    color: var(--text-secondary);
+    font-size: 14px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    position: relative;
+    animation: fadeInUp 0.6s ease-out 0.5s backwards;
+}
+
+.theme-toggle {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    border: 1px solid var(--border-color);
+    background: var(--card-bg);
+    color: var(--text-primary);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    transition: var(--transition);
+    box-shadow: 0 2px 8px var(--card-shadow);
+}
+
+.theme-toggle:hover {
+    transform: scale(1.1) rotate(15deg);
+    box-shadow: 0 4px 16px var(--card-hover-shadow);
+}
+
+.theme-toggle:active {
+    transform: scale(0.95);
+}
+
+/* ==================== Responsive Design ==================== */
+@media (max-width: 640px) {
+    body {
+        padding: 20px 16px;
+    }
+
+    .profile-name {
+        font-size: 28px;
+    }
+
+    .profile-title {
+        font-size: 15px;
+    }
+
+    .profile-subtitle {
+        font-size: 13px;
+    }
+
+    .link-card {
+        padding: 16px 20px;
+    }
+
+    .link-icon {
+        width: 44px;
+        height: 44px;
+        font-size: 20px;
+    }
+
+    .link-content h3 {
+        font-size: 15px;
+    }
+
+    .link-content p {
+        font-size: 12px;
+    }
+
+    .circle-1,
+    .circle-2,
+    .circle-3 {
+        opacity: 0.2;
+    }
+}
+
+/* ==================== Accessibility ==================== */
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
+}
+
+/* Focus Styles */
+.link-card:focus-visible,
+.theme-toggle:focus-visible {
+    outline: 3px solid var(--accent-color);
+    outline-offset: 2px;
+}
