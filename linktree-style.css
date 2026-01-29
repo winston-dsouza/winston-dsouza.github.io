@@ -101,6 +101,50 @@ body {
     animation-delay: 10s;
 }
 
+.circle-4 {
+    width: 350px;
+    height: 350px;
+    background: linear-gradient(135deg, #ffeaa7 0%, #fdcb6e 100%);
+    top: 10%;
+    right: 10%;
+    animation-delay: 3s;
+}
+
+.circle-5 {
+    width: 280px;
+    height: 280px;
+    background: linear-gradient(135deg, #a29bfe 0%, #6c5ce7 100%);
+    bottom: 10%;
+    left: 15%;
+    animation-delay: 7s;
+}
+
+/* Extra colorful circles for light mode */
+[data-theme="light"] .circle-1 {
+    background: linear-gradient(135deg, #FF6B6B 0%, #FFE66D 100%);
+    opacity: 0.6;
+}
+
+[data-theme="light"] .circle-2 {
+    background: linear-gradient(135deg, #4ECDC4 0%, #44A08D 100%);
+    opacity: 0.6;
+}
+
+[data-theme="light"] .circle-3 {
+    background: linear-gradient(135deg, #A8E6CF 0%, #FFD3B6 100%);
+    opacity: 0.6;
+}
+
+[data-theme="light"] .circle-4 {
+    background: linear-gradient(135deg, #FF85A2 0%, #FFAFCC 100%);
+    opacity: 0.6;
+}
+
+[data-theme="light"] .circle-5 {
+    background: linear-gradient(135deg, #BDB2FF 0%, #FFC6FF 100%);
+    opacity: 0.6;
+}
+
 @keyframes float {
     0%, 100% {
         transform: translate(0, 0) scale(1);
